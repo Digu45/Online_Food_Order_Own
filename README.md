@@ -39,42 +39,48 @@ An **Online Food Ordering Website** where users can browse, order, and manage fo
 | JavaScript | Client-side Logic |
 | Bootstrap | Responsive Design |
 
-
 ---
 
 ## 📸 Project Screenshots
 
 ### 🏠 Home Page
-<p align="center" >
-  <img src="images/HomePage.png" width="300" style="border:2px solid #ddd;/>
+<p align="center">
+  <img src="images/HomePage.png" width="300"
+       style="border:2px solid #ddd; border-radius:10px; padding:5px;"/>
 </p>
 
 ### 🛒 Cart Page
 <p align="center">
-  <img src="images/Cart.png" width="300" style="border:2px solid #ddd;/>
+  <img src="images/Cart.png" width="300"
+       style="border:2px solid #ddd; border-radius:10px; padding:5px;"/>
 </p>
 
 ### 📱 Mobile Verification
 <p align="center">
-  <img src="images/Verify_Mobile.png" width="300" style="border:2px solid #ddd;/>
+  <img src="images/Verify_Mobile.png" width="300"
+       style="border:2px solid #ddd; border-radius:10px; padding:5px;"/>
 </p>
 
 ### 💳 Payment Page
 <p align="center">
-  <img src="images/payment_page.png" width="300" style="border:2px solid #ddd;/>
+  <img src="images/payment_page.png" width="300"
+       style="border:2px solid #ddd; border-radius:10px; padding:5px;"/>
 </p>
 
 ### 🔐 Admin Login
 <p align="center">
-  <img src="images/admin_login.png" width="300" style="border:2px solid #ddd;/>
+  <img src="images/admin_login.png" width="300"
+       style="border:2px solid #ddd; border-radius:10px; padding:5px;"/>
 </p>
 
 ### 🧑‍💼 Admin Dashboard
 <p align="center">
-  <img src="images/admin_dashboard.png" width="300" style="border:2px solid #ddd;/>
+  <img src="images/admin_dashboard.png" width="300"
+       style="border:2px solid #ddd; border-radius:10px; padding:5px;"/>
 </p>
 
 ---
+
 
 ## 🚀 How to Run the Project
 
