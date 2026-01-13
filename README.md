@@ -46,12 +46,12 @@ An **Online Food Ordering Website** where users can browse, order, and manage fo
 
 ### 🏠 Home Page
 <p align="center">
-  <img src="images/HomePage.png" width="350"/>
+  <img src="images/HomePage.png" width="300"/>
 </p>
 
 ### 🛒 Cart Page
 <p align="center">
-  <img src="images/Cart.png" width="350"/>
+  <img src="images/Cart.png" width="300"/>
 </p>
 
 ### 📱 Mobile Verification
@@ -61,7 +61,7 @@ An **Online Food Ordering Website** where users can browse, order, and manage fo
 
 ### 💳 Payment Page
 <p align="center">
-  <img src="images/payment_page.png" width="350"/>
+  <img src="images/payment_page.png" width="300"/>
 </p>
 
 ### 🔐 Admin Login
@@ -71,7 +71,7 @@ An **Online Food Ordering Website** where users can browse, order, and manage fo
 
 ### 🧑‍💼 Admin Dashboard
 <p align="center">
-  <img src="images/admin_dashboard.png" width="350"/>
+  <img src="images/admin_dashboard.png" width="300"/>
 </p>
 
 ---
@@ -80,7 +80,7 @@ An **Online Food Ordering Website** where users can browse, order, and manage fo
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/your-username/online-food-ordering.git
+   git clone https://github.com/Digu45/Online_Food_Order_Own
 
 2. Move the project folder to htdocs
 
@@ -91,10 +91,10 @@ An **Online Food Ordering Website** where users can browse, order, and manage fo
 4. Import the database
 
    4.1 Open phpMyAdmin
-   4.2 Create a database (e.g. online_food)
+   4.2 Create a database (e.g. restaurant_db)
    4.3 Import the provided .sql file
 
-5. Open the project in your browser
+5. To open the project in your browser
 
    http://localhost:8080/online_food/splash.php?parameter=diguu
 
