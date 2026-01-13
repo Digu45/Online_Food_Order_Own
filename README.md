@@ -45,32 +45,32 @@ An **Online Food Ordering Website** where users can browse, order, and manage fo
 ## 📸 Project Screenshots
 
 ### 🏠 Home Page
-<p align="center" style="border:1px solid black">
+<p align="center" style="border:2px solid black">
   <img src="images/HomePage.png" width="300"/>
 </p>
 
 ### 🛒 Cart Page
-<p align="center">
+<p align="center" style="border:2px solid black">
   <img src="images/Cart.png" width="300"/>
 </p>
 
 ### 📱 Mobile Verification
-<p align="center">
+<p align="center" style="border:2px solid black">
   <img src="images/Verify_Mobile.png" width="300"/>
 </p>
 
 ### 💳 Payment Page
-<p align="center">
+<p align="center" style="border:2px solid black">
   <img src="images/payment_page.png" width="300"/>
 </p>
 
 ### 🔐 Admin Login
-<p align="center">
+<p align="center" style="border:2px solid black">
   <img src="images/admin_login.png" width="300"/>
 </p>
 
 ### 🧑‍💼 Admin Dashboard
-<p align="center">
+<p align="center" style="border:2px solid black">
   <img src="images/admin_dashboard.png" width="300"/>
 </p>
 
