@@ -45,7 +45,7 @@ An **Online Food Ordering Website** where users can browse, order, and manage fo
 ## 📸 Project Screenshots
 
 ### 🏠 Home Page
-<p align="center">
+<p align="center" style="border:1px solid black">
   <img src="images/HomePage.png" width="300"/>
 </p>
 
