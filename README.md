@@ -39,27 +39,40 @@ An **Online Food Ordering Website** where users can browse, order, and manage fo
 | JavaScript | Client-side Logic |
 | Bootstrap | Responsive Design |
 
+
 ---
 
 ## 📸 Project Screenshots
 
 ### 🏠 Home Page
-![Home Page](images/HomePage.png)
+<p align="center">
+  <img src="images/HomePage.png" width="600"/>
+</p>
 
 ### 🛒 Cart Page
-![Cart Page](images/Cart.png)
+<p align="center">
+  <img src="images/Cart.png" width="600"/>
+</p>
 
 ### 📱 Mobile Verification
-![Verify Mobile](images/Verify_Mobile.png)
+<p align="center">
+  <img src="images/Verify_Mobile.png" width="350"/>
+</p>
 
 ### 💳 Payment Page
-![Payment Page](images/payment_page.png)
+<p align="center">
+  <img src="images/payment_page.png" width="600"/>
+</p>
 
 ### 🔐 Admin Login
-![Admin Login](images/admin_login.png)
+<p align="center">
+  <img src="images/admin_login.png" width="450"/>
+</p>
 
 ### 🧑‍💼 Admin Dashboard
-![Admin Dashboard](images/admin_dashboard.png)
+<p align="center">
+  <img src="images/admin_dashboard.png" width="650"/>
+</p>
 
 ---
 
