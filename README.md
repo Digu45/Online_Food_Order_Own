@@ -51,7 +51,7 @@ An **Online Food Ordering Website** where users can browse, order, and manage fo
 
 ### 🛒 Cart Page
 <p align="center">
-  <img src="images/Cart.png" width="600"/>
+  <img src="images/Cart.png" width="100"/>
 </p>
 
 ### 📱 Mobile Verification
