@@ -46,32 +46,32 @@ An **Online Food Ordering Website** where users can browse, order, and manage fo
 
 ### 🏠 Home Page
 <p align="center">
-  <img src="images/HomePage.png" width="600"/>
+  <img src="images/HomePage.png" width="350"/>
 </p>
 
 ### 🛒 Cart Page
 <p align="center">
-  <img src="images/Cart.png" width="100"/>
+  <img src="images/Cart.png" width="350"/>
 </p>
 
 ### 📱 Mobile Verification
 <p align="center">
-  <img src="images/Verify_Mobile.png" width="350"/>
+  <img src="images/Verify_Mobile.png" width="300"/>
 </p>
 
 ### 💳 Payment Page
 <p align="center">
-  <img src="images/payment_page.png" width="600"/>
+  <img src="images/payment_page.png" width="350"/>
 </p>
 
 ### 🔐 Admin Login
 <p align="center">
-  <img src="images/admin_login.png" width="450"/>
+  <img src="images/admin_login.png" width="300"/>
 </p>
 
 ### 🧑‍💼 Admin Dashboard
 <p align="center">
-  <img src="images/admin_dashboard.png" width="650"/>
+  <img src="images/admin_dashboard.png" width="350"/>
 </p>
 
 ---
