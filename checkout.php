@@ -370,19 +370,19 @@ $round_off = number_format($rounded_total - $total, 2);
 </body>
 
 </html>
-
 <script>
 const payBtn = document.getElementById('payNowBtn');
 const codBtn = document.getElementById('codBtn');
 const errorMsg = document.getElementById('paymentError');
 const radios = document.querySelectorAll('input[name="payment_mode"]');
 
+// hide buttons initially
 payBtn.style.display = "none";
 codBtn.style.display = "none";
 
+// handle payment mode selection
 radios.forEach(radio => {
     radio.addEventListener("change", function () {
-
         errorMsg.style.display = "none";
 
         if (this.value === "COD") {
@@ -396,29 +396,21 @@ radios.forEach(radio => {
     });
 });
 
-// UPI / CARD
+// UPI / CARD → GO TO placeorder.php
 payBtn.onclick = () => {
     const selected = document.querySelector('input[name="payment_mode"]:checked');
-    if (!selected) return;
 
-    fetch("start_payment.php", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({
-            payment_method: selected.value,
-            amount: <?= $rounded_total ?>
-        })
-    })
-    .then(res => res.json())
-    .then(data => {
-        if (data.status === "ok") {
-            window.location.href = data.redirect_url;
-        }
-    });
+    if (!selected) {
+        errorMsg.style.display = "block";
+        return;
+    }
+
+    // redirect with payment mode
+    window.location.href = "place_order.php?payment_mode=" + selected.value;
 };
 
-// CASH ORDER
+// CASH → GO TO placeorder.php
 codBtn.onclick = () => {
-    window.location.href = "cash_order.php";
+    window.location.href = "place_order.php?payment_mode=COD";
 };
 </script>

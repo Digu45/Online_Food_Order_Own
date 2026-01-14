@@ -27,6 +27,7 @@ if (isset($_POST['update_status'])) {
         UPDATE placeorder 
         SET 
             `status` = '$new_status',
+            `payment_status` = '$new_status',
             status_id = '$status_id'
         WHERE OrderId = '$order_id'
     ");

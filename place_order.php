@@ -1,5 +1,7 @@
 <?php
 session_start();
+$payment_method = $_GET['payment_mode'] ?? 'COD';
+
 
 // Session variables
 $mobile     = $_SESSION['mobile'] ?? '';
@@ -9,31 +11,38 @@ $cust_name  = $_SESSION['name'] ?? '';
 
 include("connection.php");
 
-// Get JSON input
-$input = file_get_contents("php://input");
-$data  = json_decode($input, true);
+$itemTotal = 0;
 
-// Totals
-$itemTotal        = $data['item_total'] ?? 0;
-$cgstTotal        = $data['cgst_total'] ?? 0;
-$sgstTotal        = $data['sgst_total'] ?? 0;
-$fractionalAmount = $data['fractional_amount'] ?? 0;
-$roundedTotal     = $data['rounded_total'] ?? 0;
+$sumRes = $conn->query("
+    SELECT SUM(Amount) AS total 
+    FROM menu_items 
+    WHERE DeviceID='$device_id'
+");
+$row = $sumRes->fetch_assoc();
+$itemTotal = $row['total'];
 
-// Payment data from frontend
-$payment_method = $data['payment_method'] ?? 'COD';
+$cgstTotal = round($itemTotal * 0.025, 2);
+$sgstTotal = round($itemTotal * 0.025, 2);
+$totalTax  = $cgstTotal + $sgstTotal;
+$roundedTotal = round($itemTotal + $totalTax);
+$fractionalAmount = $roundedTotal - ($itemTotal + $totalTax);
 
-// Payment logic
+
 if ($payment_method === 'COD') {
     $payment_status = 'Pending';
     $transaction_id = NULL;
 } elseif ($payment_method === 'UPI') {
     $payment_status = 'Pending';
-    $transaction_id = NULL; // will be updated after UTR entry
-} else { // CARD (mock)
+    $transaction_id = NULL;
+} elseif ($payment_method === 'CARD') {
     $payment_status = 'Paid';
     $transaction_id = 'CARD' . time();
+} else {
+    $payment_method = 'COD';
+    $payment_status = 'Pending';
+    $transaction_id = NULL;
 }
+
 
 $totalTax = $cgstTotal + $sgstTotal;
 
