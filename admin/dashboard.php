@@ -235,7 +235,7 @@ $lastOrders = mysqli_query($conn, "
                         <th>Total</th>
                         <th>Table No</th>
                         <th>Status</th>
-                        <th>Payment</th>
+                        <th>Payment Mode</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -248,7 +248,7 @@ $lastOrders = mysqli_query($conn, "
                             <td><?php echo $row['amount']; ?></td>
                             <td><?php echo $row['table']; ?></td>
                             <td><?php echo $row['status']; ?></td>
-                            <td><?php echo $row['PaymentMethod']; ?></td>
+                            <td><?php echo $row['payment_method']; ?></td>
                         </tr>
                     <?php } ?>
                 </tbody>
